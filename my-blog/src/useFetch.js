@@ -15,7 +15,8 @@ const useFetch = (url) => {
         if (!res.ok) { // error coming back from server
           throw Error('could not fetch the data for that resource');
         } 
-        return res.json();
+         return res.json();
+        // console.log(post);
       })
       .then(data => {
         setIsPending(false);
